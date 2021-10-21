@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+</head>
+
+<body style="background-color: rgb(199 181 181); font-family: Montserrat; ">
+    <fieldset>
+        <legend> 
+             <h1>Registration Form</h1>
+         </legend>
+        <strong>Please fill the form below correctly </strong>
+
+        <form action="registration_details.php" method="POST">
+            <h1>Personal Details</h1>
+            <h2 style="display: inline;">Student Name : </h2>
+            <input type="text" name="first name" placeholder="First Name" required> &nbsp;
+            <input type="text" name="middle name" placeholder="Middle Name"> &nbsp;
+            <input type="text" name="last name" placeholder="Last Name" required>
+
+            <br><br>
+
+            <h2 style="display: inline;">Date Of Birth : </h2>
+            <input type="date" name="date of birth" required>
+
+            <br><br>
+
+            <h2 style="display: inline;"> Gender : </h2>
+            <input type="radio" name="radio button">
+            <strong>Male</strong>
+            <input type="radio" name="radio button">
+            <strong>Female</strong>
+            <input type="radio" name="radio button">
+            <strong>Do not wish to Disclose</strong>
+
+            <br><br>
+
+            <h1> Contact Details</h1>
+            <strong>Email ID</strong>
+            <input type="email" name="email id" placeholder="ex-myname123@example.com" required> &nbsp; &nbsp; &nbsp;
+            <strong>Phone Number</strong>
+            <input type="number" name="phone number" placeholder="(000) 000-0000" required>
+
+            <br><br>
+
+            <h2 style="display: inline;">Address : </h2>
+            Area/Locality
+            <input type="text" name="Area" placeholder="Area/Locality"> &nbsp; &nbsp;
+            City
+            <input type="text" name="city" placeholder="City" required> &nbsp; &nbsp;
+            State
+            <input type="text" name="state" placeholder="State" required> &nbsp; &nbsp;
+            Pin Code
+            <input type="text" name="pincode" placeholder="Pin Code" required> &nbsp; &nbsp;
+
+            <br><br>
+
+            <h1>Educational Details</h1>
+            <strong>10<sup>th</sup> :</strong> &nbsp;
+            <strong>Year Of Passing</strong>
+            <input type="month" name="year"> &nbsp;&nbsp;
+            <strong>Percentage</strong>
+            <input type="text" name="Percentage">
+            <br>
+
+            <strong>12<sup>th</sup> :</strong> &nbsp;
+            <strong>Year Of Passing</strong>
+            <input type="month" name="year"> &nbsp;&nbsp;
+            <strong>Percentage</strong>
+            <input type="text" name="Percentage">
+
+            <br><br>
+
+            <h2 style="display: inline;">Achievements : </h2>
+            <textarea name="achievements" cols="35" rows="1" placeholder="write your achievements here"></textarea>
+
+            <br><br>
+
+            <h2 style="display: inline;">Hobbies</h2>
+            <select name="hobbies">
+                <option value="Acting">Acting</option>
+                <option value="Baking">Baking</option>
+                <option value="Cooking">Cooking</option>
+                <option value="Drawing">Drawing</option>
+                <option value="Other">Other</option>
+            </select>
+
+            <br><br>
+
+            <input type="checkbox" name="checkbox">
+            <strong>I have read and agree to the <a href="www.google.com">terms and conditions</a></strong>
+
+            <br><br>
+
+            <button type="submit" style="background-color: gray;">Submit</button>
+            <button type="reset" style="background-color: gray;">Reset</button>
+
+        </form>
+
+    </fieldset>
+</body>
+
+</html>
