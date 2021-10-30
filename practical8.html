@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors and CSS Rules</title>
+    <style>
+        /* By Element  */
+        h2 {
+            /* background propeety  */
+            background: linear-gradient(red, green);
+            
+            /* cursor property  */
+            cursor: not-allowed;
+            
+            
+        }
+        
+        h2:hover{
+            /* hover property  */
+            color: blue;
+        }
+        
+        div {
+            
+            /* background propeety  */
+            background-color: pink;
+
+            /* margin property  */
+            margin: 15px;
+
+            /* display property  */
+            display: inline-block;
+
+            /* border property  */
+            border: 2px solid black;
+            border-radius: 5px;
+
+            padding: 6px;
+            width: 200px;
+            height: 200px;
+
+
+        }
+
+        /* By Class  */
+        .class1 {
+
+            /* text property  */
+            text-shadow: 1px  1px red;
+            text-decoration: underline;
+
+        }
+
+        /* By ID  */
+        #id1 {
+            /* display property  */
+            display: block;
+
+            /* border property  */
+            border: 1px solid red;
+            
+        }
+
+        #id2 {
+
+            /* border property  */
+            border: 1px solid blue;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    
+    <div>
+
+        <!-- By Element  -->
+        <h2> Heading </h2>
+
+
+        <!-- By Class  -->
+        <p class="class1"> Paragraph </p>
+        <span class="class1"> Span </span>
+        <strong class="class1"> Strong </strong>
+
+        <br><br>
+
+        <!-- By ID  -->
+        <span id="id1"> Span 1 </span>
+        <span id="id2"> Span 2 </span>
+
+    </div>
+
+</body>
+
+</html>

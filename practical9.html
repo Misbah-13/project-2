@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selector Combination and Global Selector</title>
+    <style>
+        /* Global or Universal Selector  */
+        * {
+            background-color: darkgray;
+        }
+
+        div {
+            border: 2px solid black;
+            display: inline-block;
+            width: 300px;
+            height: 300px;
+            margin: 3px;
+            padding-left: 15px;
+        }
+
+        /* By Element and Class  */
+        h1.c1 {
+            color: blue;
+            text-decoration: underline;
+        }
+
+        /* By Class and Id  */
+        .c1#i1 {
+            font-size: 15px;
+        }
+
+        /* By Element and Id  */
+        h1#i1 {
+            border: 1px solid brown;
+        }
+
+        /* By Element and Element  */
+        div p {
+            border: 1px dotted blue;
+            display: inline-block;
+        }
+
+        /* By Class and Class  */
+        .p1,
+        .p2 {
+            background-color: pink;
+
+            border-radius: 3px;
+        }
+
+        /* By Element , class and Id  */
+        h1.c1#i1 {
+            background-color: chartreuse;
+        }
+
+        /* By Header, Class, element and sub-class  */
+        header.main h1.hc{
+            text-shadow: 3px 1px chocolate ;
+        }
+
+        /* more than one class in tag  */
+        .btn1:hover{
+            background-color: green;
+        }
+        .btn2{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div>
+        <h1 class="c1">Apple</h1>
+        <h1 class="c1" id="i1">Banana</h1>
+        <p class="p1">Mango</p>
+        <p class="p2">Cherry</p>
+
+        <header class="main">
+            <h1 class="hc">Orange</h1>
+        </header>
+
+        <button class="btn1 btn2">submit</button>
+
+    </div>
+</body>
+
+</html>
